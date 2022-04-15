@@ -19,7 +19,7 @@ describe('Todos', () => {
       .send({
         title: 'test todo',
         deadline: todoDate
-      })
+      }) 
       .set('username', userResponse.body.username);
 
     const response = await request(app)
